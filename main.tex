@@ -1,0 +1,87 @@
+\documentclass[autodetect-engine]{jsarticle}
+
+\usepackage[sc]{mathpazo}
+\usepackage{newpxtext}
+%枠で囲む
+\usepackage{ascmac}
+\usepackage{amsmath}
+
+\title{Prob \& Stats}
+\author{Kyoshiro Kamura}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+{\fontsize{10.5bp}{16.8bp}\selectfont
+  \section{Introduction}
+  Prob \& Stats is Not New.
+  
+  The concept of chance of uncertainty.
+  
+  \section{Sets and Elements}
+  A \textbf{``set''} is clealy defined collection of \textbf{``elements''}.
+
+  Sets are clealy defined, but not nessesarily finite.
+
+  \subsection{Symbols}
+  When element ``$a$'' belongs to set ``$A$'', we write
+  \[
+  a \in A
+  \]
+  That means ``$a$ is an element of $A$.''.
+
+  If element ``$b$ is outside set ``$A$'', we write
+  \[
+  b \notin A
+  \]
+
+  If the elements of set $B$ are contained within set $A$
+  \[
+  B \subset A
+  \]
+  That means ``$B$ is subset of $A$.''.
+
+  A set containing no elements is called \textbf{``null set''}
+  and witten as "$\emptyset$''.
+
+  \subsection*{\underline{Let's consider 2 sets $A$ and $B$}}
+  The set created by the elements belonging to both $A$ \& $B$ is called the \textbf{``intersection''}.
+  \[
+  A \cap B
+  \]
+
+  The set created by all the element of $A$ \& $B$ is called the \textbf{``union''}
+  \[
+  A \cup B
+  \]
+
+  All elements outside both $A$ \& $B$ from the ``complementary'' set.
+  \[
+  \overline{A \cup B} = U - (A \cup B)
+  \]
+  \begin{itembox}[l]{Note}
+    In some textbook, this symbol, ``$U$'' means \textbf{``Everything''}.
+  \end{itembox}
+
+  \subsubsection*{\underline{Practice Excercise}}
+  \[
+  U = \{1, 2, 4, 8, 10\}, A = \{4, 8\}
+  \]
+  \begin{flushright}
+    Note : ``$U$'' is the ``entire universe'', and $A$ is a subset of $U$.
+  \end{flushright}
+
+  \begin{flalign*}
+    \displaystyle
+    &1.\;A \cap U = \{4, 8\}&\\
+    &2.\;A \cup U = \{1, 2, 4, 8, 10\}&\\
+    &3.\;B = \overline{A} = \{1, 2, 10\}&\\
+    &4,\;A \cap B = \emptyset&\\
+    &5,\;A \cup B = \{1, 2, 4, 8, 10\}&
+  \end{flalign*}
+
+  \subsection{Rules}
+
+}
+\end{document}
