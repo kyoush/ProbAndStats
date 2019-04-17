@@ -6,9 +6,14 @@
 \usepackage{ascmac}
 \usepackage{amsmath}
 
+\newcommand{\fulltoday}{\number\day\space \ifcase\month\or
+  January\or February\or March\or April\or May\or June\or
+  July\or August\or September\or October\or November\or December\fi
+  \space\number\year}
+
 \title{Prob \& Stats}
 \author{Kyoshiro Kamura}
-\date{\today}
+\date{\fulltoday}
 
 \begin{document}
 \maketitle
@@ -31,7 +36,7 @@
   \]
   That means ``$a$ is an element of $A$.''.
 
-  If element ``$b$ is outside set ``$A$'', we write
+  If element ``$b$'' is outside set ``$A$'', we write
   \[
   b \notin A
   \]
@@ -82,6 +87,50 @@
   \end{flalign*}
 
   \subsection{Rules}
+  For calucalations with sets, the following equations \textbf{``rules''} are useful.
 
+  \begin{itemize}
+  \item Commutative Rule : $A \cup B = B \cup A\;$, $A \cap B = B \cap A$
+  \item Associative Rule : $A \cup (B \cup C) = (A \cup B) \cup C\;$, $A \cap (B \cap C) = (A \cap B) \cap C$
+  \item Distributive Rule : $A \cap (B \cup C) = (A \cap B) \cup (A \cap C)\;$, $A\cup (B \cap C) = (A \cup B) \cap (A \cup C)$
+  \item De Morgan's Rule : $\overline{A \cap B} = \overline{A}\cup\overline{B}\;$, $\overline{A \cup B} = \overline{A} \cap \overline{B}$
+  \end{itemize}
+
+  \subsubsection*{\underline{Practice Excercise}}
+  $\cdot$Use Venn's Diagram to show De Morgan's Rule 1.
+  
+  $\cdot$Use Venn's Diagram to show De Morgan's Rule 2.
+
+  \subsubsection*{\textbf{Two Basic Rules}}
+  \[\overline{(\overline{A})} = A,\;A\cap\overline{A} = \emptyset\]
+
+  \subsection{How to count the number of elements}
+  $n(A)$:number of elements in finite set A
+  
+  $n(B)$:number of elements in finite set B
+  
+  $n(A\cup B)$:number of elements in sets A and B
+
+  \underline{\textbf{The way to count the number of elements.}}
+
+  If ther is on overlap.
+
+  \[n(A\cup B) = n(A) + n(B)\]
+
+  but, in case of some counted twice,
+
+  \[n(A\cup B) = n(A) + n(B) - n(A\cap B)\]
+
+  $A\times B$:\textbf{''direct product''} or \textbf{``cartesian product''} means set of all possible ordered pairs.
+
+  \[
+  A \times B = \{(a,\;b)|a \in A,\;b \in B\}
+  \]
+
+  \[
+  n(A\times B) = n(A).n(B)
+  \]
+  
 }
+
 \end{document}
